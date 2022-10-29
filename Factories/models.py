@@ -22,4 +22,8 @@ class Factory(models.Model):
     total_members=models.IntegerField(max_length=10)
 
     def __str__(self):
-        return self.cooperative
+        return self.factory_name
+
+from django.contrib import admin
+admin.site.register(Growerscoop)
+admin.site.register(Factory)

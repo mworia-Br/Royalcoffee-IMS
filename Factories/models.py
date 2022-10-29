@@ -20,3 +20,6 @@ class Factory(models.Model):
     soil=models.CharField(max_length=256)
     process=models.CharField(max_length=256)
     total_members=models.IntegerField(max_length=10)
+
+    def __str__(self):
+        return self.cooperative
